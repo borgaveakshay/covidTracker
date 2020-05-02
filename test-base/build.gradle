@@ -1,5 +1,5 @@
-apply from:"$project.rootDir/configurations/android-base.gradle"
-
+apply plugin: 'com.android.library'
+apply from:'$project.rootDir/configurations/android-base.gradle'
 dependencies {
     implementation Rx.rxJava
 }
