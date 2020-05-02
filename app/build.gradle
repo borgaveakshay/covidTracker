@@ -1,5 +1,4 @@
 apply from:"$project.rootDir/configurations/android-base.gradle"
-
 dependencies {
-    implementation Rx.rxJava
+    implementation Android.constraintLayout
 }

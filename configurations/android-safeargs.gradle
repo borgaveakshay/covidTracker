@@ -1,1 +1,1 @@
-apply plugin: "androidx.navigation.safeargs.kotlin"
+apply plugin:'androidx.navigation.safeargs.kotlin'
