@@ -1,2 +1,1 @@
-
-include(":app", ":base")
+include(":app", ":base", ":test-base",":home")

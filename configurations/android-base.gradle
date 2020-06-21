@@ -43,8 +43,12 @@ android {
         implementation Core.kotlin
         implementation Core.androidCore
         testImplementation TestLibs.junit
-        androidTestImplementation TestLibs.androidXTestExtension
+        testImplementation TestLibs.androidXTestExtension
         androidTestImplementation TestLibs.mockito
-        androidTestImplementation TestLibs.roboletric
+        androidTestImplementation TestLibs.mokitoCore
+        testImplementation TestLibs.roboletric
+        androidTestImplementation TestLibs.testCore
+        androidTestImplementation TestLibs.testRunner
+        implementation TestLibs.mokitoAll
     }
 }
