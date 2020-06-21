@@ -11,10 +11,7 @@ jobs:
       - checkout
       - run:
           command: ./gradlew build
+      - run:
+          name: test
+          command: ./gradlew test connectedAndroidTest
 
-      workflows:
-        version: 1
-        buid_and_test:
-          jobs:
-            - build
-            - test
