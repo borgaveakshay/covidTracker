@@ -23,6 +23,7 @@ object Versions {
     const val liveData = "2.2.0"
     const val navigation = "2.3.0-alpha06"
     const val dagger = "2.27"
+    const val gson = "2.8.6"
 
     /* test */
     const val junit = "4.12"
@@ -31,6 +32,9 @@ object Versions {
     const val roboletric = "4.3"
     const val mockito = "3.3.3"
     const val liveDataTestHelper = "2.1.0"
+    const val testCore = "1.0.0"
+    const val testRunner = "1.1.0"
+    const val mockitoAll = "1.10.19"
 
 
 }
@@ -74,6 +78,7 @@ object Network {
     const val retrofit = "com.squareup.retrofit2:retrofit:${Versions.retrofit}"
     const val gsonConvertor = "com.squareup.retrofit2:converter-gson:${Versions.gsonConverter}"
     const val okhttp = "com.squareup.okhttp3:okhttp:${Versions.okhttp}"
+    const val gson = "com.google.code.gson:gson:${Versions.gson}"
 }
 
 object TestLibs {
@@ -83,6 +88,11 @@ object TestLibs {
         "androidx.test.espresso:espresso-core:androidx.test.espresso:espresso-core:${Versions.androidXExpresso}"
     const val roboletric = "org.robolectric:robolectric:${Versions.roboletric}"
     const val mockito = "org.mockito:mockito-android:${Versions.mockito}"
+    const val mokitoCore = "org.mockito:mockito-core:${Versions.mockito}"
+    const val mokitoAll = "org.mockito:mockito-all:${Versions.mockitoAll}"
     const val liveDataTestHelpers = "androidx.arch.core:core-testing:${Versions.liveDataTestHelper}"
     const val navigation = "androidx.navigation:navigation-testing:${Versions.navigation}"
+    const val testCore = "androidx.test:core:${Versions.testCore}"
+    const val testRunner = "androidx.test:runner:${Versions.testRunner}"
+
 }
