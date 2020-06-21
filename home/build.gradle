@@ -1,0 +1,16 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply from:"$project.rootDir/configurations/android-base.gradle"
+
+dependencies {
+
+    implementation project(":base")
+    implementation project(":test-base")
+    implementation Rx.rxAndroid
+    implementation Rx.rxJava
+    implementation Network.gsonConvertor
+    implementation Network.retrofit
+
+
+}
