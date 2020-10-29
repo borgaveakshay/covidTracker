@@ -1,5 +1,10 @@
 apply plugin:'com.android.application'
 apply from:"$project.rootDir/configurations/android-base.gradle"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
 dependencies {
+    implementation project(":base")
+    implementation project(":test-base")
+    implementation project(":home")
     implementation Android.constraintLayout
 }

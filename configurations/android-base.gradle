@@ -25,9 +25,16 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    kapt {
+        correctErrorTypes true
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
 
     dataBinding {
-        enabled = true
+        enabled true
     }
 
     buildTypes {
@@ -50,5 +57,7 @@ android {
         androidTestImplementation TestLibs.testCore
         androidTestImplementation TestLibs.testRunner
         implementation TestLibs.mokitoAll
+        implementation Dagger.hilt
+        kapt Dagger.hiltCompiler
     }
 }
