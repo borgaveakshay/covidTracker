@@ -10,6 +10,7 @@ object Apps {
 
 object Versions {
     const val gradle = "3.6.2"
+    const val hilt = "2.28-alpha"
     const val kotlin = "1.3.71"
     const val appcompat = "1.1.0"
     const val androidx = "1.1.0"
@@ -60,7 +61,8 @@ object Dagger {
     const val android = "com.google.dagger:dagger-android:${Versions.dagger}"
     const val androidSupport = "com.google.dagger:dagger-android-support:${Versions.dagger}"
     const val annotationProcessor = "com.google.dagger:dagger-android-processor:${Versions.dagger}"
-
+    const val hilt = "com.google.dagger:hilt-android:${Versions.hilt}"
+    const val hiltCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}"
 }
 
 object Rx {
